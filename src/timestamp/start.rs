@@ -3,6 +3,7 @@ use crate::{
     timestamp::ParsedTimestamp,
 };
 use std::str::FromStr;
+use std::time::SystemTime;
 use time::{Date, Month, OffsetDateTime};
 
 /// A timestamp which will be align with the start of a [`ParsedTimestamp`]. Meaning, it will
@@ -13,6 +14,12 @@ pub struct StartTimestamp(pub OffsetDateTime);
 impl From<StartTimestamp> for OffsetDateTime {
     fn from(value: StartTimestamp) -> Self {
         value.0
+    }
+}
+
+impl From<StartTimestamp> for SystemTime {
+    fn from(value: StartTimestamp) -> Self {
+        value.0.into()
     }
 }
 
