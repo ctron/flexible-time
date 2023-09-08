@@ -9,8 +9,8 @@ repository = "https://github.com/ctron/flexible-time"
 categories = ["parsing", "date-and-time", "command-line-interface"]
 keywords = ["time", "cli", "parsing"]
 readme = "README.md"
-# based on time-core 0.1.1
-rust-version = "1.65"
+# based on time 0.3
+rust-version = "1.67"
 
 [dependencies]
 time = { version = "0.3", features = ["parsing", "macros"] }

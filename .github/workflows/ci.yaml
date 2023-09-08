@@ -16,8 +16,8 @@ jobs:
       matrix:
         toolchain:
           - stable
-          # minimum version: because of "der"
-          - "1.65"
+          # minimum version: because of "time"
+          - "1.67"
 
     steps:
 
