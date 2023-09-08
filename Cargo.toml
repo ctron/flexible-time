@@ -1,0 +1,17 @@
+[package]
+name = "flexible-time"
+description = "A library to parse timestamps in a flexible format"
+version = "0.1.0"
+edition = "2021"
+authors = ["Jens Reimann <ctron@dentrassi.de>"]
+license = "Apache-2.0"
+repository = "https://github.com/ctron/flexible-time"
+categories = ["parsing", "date-and-time", "command-line-interface"]
+keywords = ["time", "cli", "parsing"]
+readme = "README.md"
+# based on time-core 0.1.1
+rust-version = "1.65"
+
+[dependencies]
+time = { version = "0.3", features = ["parsing", "macros"] }
+
